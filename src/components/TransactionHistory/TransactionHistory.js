@@ -1,10 +1,4 @@
-import {
-  Wrapper,
-  Topic,
-  List,
-  ListLi,
-  Text,
-} from './TransactionHistory.styled';
+import { Wrapper, Topic, Text } from './TransactionHistory.styled';
 export const TransactionHistory = ({ transactions }) => {
   return (
     <Wrapper className="transaction-history">

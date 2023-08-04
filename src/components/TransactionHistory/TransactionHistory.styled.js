@@ -25,24 +25,3 @@ export const Text = styled.tr`
   padding: 5px;
   height: 40px;
 `;
-
-export const List = styled.ul`
-  border: 1px solid #9e9e9e;
-  border-radius: 0 0 10px 10px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 100%;
-`;
-export const ListLi = styled.li`
-  font-size: 30px;
-  padding: 40px 0;
-  width: 100%;
-  background-color: #9e9e9e47;
-  border: 1px solid #9e9e9e;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  flex-direction: column;
-  align-items: center;
-`;
