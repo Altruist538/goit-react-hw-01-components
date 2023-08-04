@@ -15,6 +15,9 @@ export const Topic = styled.h2`
   padding: 40px 0;
   font-size: 40px;
   text-align: center;
+  text-transform: uppercase;
+color: #696f6f;
+}
 `;
 export const Text = styled.p`
   margin: 0;
