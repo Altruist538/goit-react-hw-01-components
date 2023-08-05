@@ -6,9 +6,7 @@ import {
   ListLi,
   ImgAvatar,
 } from './Profile.styled';
-export const Profile = ({
-  userItems: { username, tag, location, avatar, stats },
-}) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Wrapper>
       <div className="description">

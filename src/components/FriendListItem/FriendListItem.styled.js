@@ -14,7 +14,6 @@ export const PointSpan = styled.span`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid #9e9e9e;
   background-color: #9e9e9e47;
   margin: 20px;
 `;

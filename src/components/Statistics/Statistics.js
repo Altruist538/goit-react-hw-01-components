@@ -4,13 +4,12 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-export const Statistics = ({ data }) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <Wrapper>
-      <Topic className="title">Upload stats</Topic>
-
+      {title && <Topic>{title}</Topic>}
       <List className="stat-list">
-        {data.map(dat => (
+        {stats.map(dat => (
           <ListLi style={{ backgroundColor: getRandomHexColor() }} key={dat.id}>
             <span className="label">{dat.label}</span>
             <Text className="percentage">{dat.percentage}%</Text>

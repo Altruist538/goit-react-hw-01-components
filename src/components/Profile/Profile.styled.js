@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const Wrapper = styled.div`
   margin: auto;
-
+  overflow: hidden;
   width: 600px;
   border: 1px solid #9e9e9e;
   border-radius: 10px;
@@ -25,8 +25,6 @@ export const Text = styled.p`
 `;
 
 export const List = styled.ul`
-  border: 1px solid #9e9e9e;
-  border-radius: 0 0 10px 10px;
   margin: 0;
   padding: 0;
   display: flex;

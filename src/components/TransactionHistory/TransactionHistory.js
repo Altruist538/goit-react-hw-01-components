@@ -1,5 +1,5 @@
 import { Wrapper, Topic, Text } from './TransactionHistory.styled';
-export const TransactionHistory = ({ transactions }) => {
+export const TransactionHistory = ({ items }) => {
   return (
     <Wrapper className="transaction-history">
       <thead>
@@ -11,16 +11,16 @@ export const TransactionHistory = ({ transactions }) => {
       </thead>
 
       <tbody>
-        {transactions.map((transaction, index) => (
+        {items.map((item, index) => (
           <Text
             style={{
               backgroundColor: index % 2 !== 0 ? '#9e9e9e' : '#ffffff',
             }}
-            key={transaction.id}
+            key={item.id}
           >
-            <td>{transaction.type}</td>
-            <td>{transaction.amount}</td>
-            <td>{transaction.currency}</td>
+            <td>{item.type}</td>
+            <td>{item.amount}</td>
+            <td>{item.currency}</td>
           </Text>
         ))}
       </tbody>
