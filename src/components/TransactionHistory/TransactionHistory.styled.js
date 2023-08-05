@@ -7,7 +7,7 @@ export const WrapperTabl = styled.table`
   text-align: center;
 `;
 
-export const TopicTabl = styled.tr`
+export const TopicTable = styled.tr`
   height: 40px;
   width: 100%;
   font-size: 20px;
@@ -24,5 +24,9 @@ export const Text = styled.tr`
   border: 1px solid #9e9e9e;
   padding: 5px;
   height: 40px;
+`;
+export const ColumnType = styled.td`
   text-transform: capitalize;
 `;
+export const ColumnAmount = styled.td``;
+export const ColumnCurrency = styled.td``;

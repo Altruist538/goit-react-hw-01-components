@@ -1,13 +1,20 @@
-import { WrapperTabl, TopicTabl, Text } from './TransactionHistory.styled';
+import {
+  WrapperTabl,
+  TopicTable,
+  Text,
+  ColumnType,
+  ColumnAmount,
+  ColumnCurrency,
+} from './TransactionHistory.styled';
 export const TransactionHistory = ({ items }) => {
   return (
     <WrapperTabl>
       <thead>
-        <TopicTabl>
+        <TopicTable>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
-        </TopicTabl>
+        </TopicTable>
       </thead>
 
       <tbody>
@@ -18,9 +25,9 @@ export const TransactionHistory = ({ items }) => {
             }}
             key={item.id}
           >
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+            <ColumnType>{item.type}</ColumnType>
+            <ColumnAmount>{item.amount}</ColumnAmount>
+            <ColumnCurrency>{item.currency}</ColumnCurrency>
           </Text>
         ))}
       </tbody>
