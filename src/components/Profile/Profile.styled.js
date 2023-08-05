@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.3);
 `;
 
 export const Topic = styled.p`

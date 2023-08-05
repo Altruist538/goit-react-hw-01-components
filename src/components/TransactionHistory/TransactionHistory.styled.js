@@ -3,7 +3,7 @@ export const Wrapper = styled.table`
   margin: 20px auto;
   width: 600px;
   border: 1px solid #9e9e9e;
-
+  border-radius: 10px;
   text-align: center;
 `;
 
@@ -24,4 +24,5 @@ export const Text = styled.tr`
   border: 1px solid #9e9e9e;
   padding: 5px;
   height: 40px;
+  text-transform: capitalize;
 `;
