@@ -1,43 +1,38 @@
 import {
   Wrapper,
   Text,
-  Topic,
-  List,
+  TopicName,
+  ListStats,
   ListLi,
   ImgAvatar,
+  Description,
+  TextLabel,
+  TextQuantity,
 } from './Profile.styled';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Wrapper>
-      <div className="description">
+      <Description>
         <ImgAvatar src={avatar} alt="User avatar" />
-        <Topic className="name">
-          <b>{username}</b>
-        </Topic>
-        <Text className="tag">{tag}@pmarica</Text>
-        <Text className="location">{location}</Text>
-      </div>
+        <TopicName>{username}</TopicName>
+        <Text>{tag}</Text>
+        <Text>{location}</Text>
+      </Description>
 
-      <List>
+      <ListStats>
         <ListLi>
-          <span className="label">Followers</span>
-          <span className="quantity">
-            <b>{stats.followers}</b>
-          </span>
+          <TextLabel>Followers</TextLabel>
+          <TextQuantity>{stats.followers}</TextQuantity>
         </ListLi>
         <ListLi>
-          <span className="label">Views</span>
-          <span className="quantity">
-            <b>{stats.views}</b>
-          </span>
+          <TextLabel>Views</TextLabel>
+          <TextQuantity>{stats.views}</TextQuantity>
         </ListLi>
         <ListLi>
-          <span className="label">Likes</span>
-          <span className="quantity">
-            <b>{stats.likes}</b>
-          </span>
+          <TextLabel>Likes</TextLabel>
+          <TextQuantity>{stats.likes}</TextQuantity>
         </ListLi>
-      </List>
+      </ListStats>
     </Wrapper>
   );
 };

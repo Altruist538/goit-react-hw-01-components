@@ -8,12 +8,17 @@ export const Topic = styled.h2`
 color: #696f6f;
 }
 `;
-export const Text = styled.p`
+export const TextPercentage = styled.span`
   margin: 0;
   font-size: 40px;
   text-align: center;
 `;
-export const List = styled.ul`
+export const TextLabel = styled.span`
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+`;
+export const ListStat = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
@@ -21,9 +26,8 @@ export const List = styled.ul`
   object-fit: cover;
   overflow-x: auto;
 `;
-export const ListLi = styled.li`
+export const ListItem = styled.li`
   color: #fff;
-  font-size: 30px;
   padding: 40px 20px;
   width: 100%;
   display: flex;

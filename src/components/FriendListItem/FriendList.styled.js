@@ -29,3 +29,7 @@ export const Text = styled.p`
   text-align: center;
   margin: 20px;
 `;
+export const ListFriend = styled.ul`
+  margin: 0;
+  padding: 0;
+`;

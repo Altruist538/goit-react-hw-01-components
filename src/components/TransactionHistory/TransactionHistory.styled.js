@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const Wrapper = styled.table`
+export const WrapperTabl = styled.table`
   margin: 20px auto;
   width: 600px;
   border: 1px solid #9e9e9e;
@@ -7,7 +7,7 @@ export const Wrapper = styled.table`
   text-align: center;
 `;
 
-export const Topic = styled.tr`
+export const TopicTabl = styled.tr`
   height: 40px;
   width: 100%;
   font-size: 20px;

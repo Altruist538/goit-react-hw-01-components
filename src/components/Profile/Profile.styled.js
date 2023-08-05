@@ -10,10 +10,12 @@ export const Wrapper = styled.div`
   align-items: center;
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.3);
 `;
+export const Description = styled.div``;
 
-export const Topic = styled.p`
+export const TopicName = styled.p`
   font-size: 40px;
   text-align: center;
+  font-weight: bold;
 `;
 export const ImgAvatar = styled.img`
   width: 450px;
@@ -24,15 +26,20 @@ export const Text = styled.p`
   font-size: 30px;
   text-align: center;
 `;
-
-export const List = styled.ul`
+export const TextLabel = styled.span`
+  font-size: 30px;
+`;
+export const TextQuantity = styled.span`
+  font-size: 30px;
+  font-weight: bold;
+`;
+export const ListStats = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
   width: 100%;
 `;
 export const ListLi = styled.li`
-  font-size: 30px;
   padding: 40px 0;
   width: 100%;
   background-color: #9e9e9e47;

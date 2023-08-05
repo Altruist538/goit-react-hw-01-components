@@ -1,13 +1,13 @@
-import { Wrapper, Topic, Text } from './TransactionHistory.styled';
+import { WrapperTabl, TopicTabl, Text } from './TransactionHistory.styled';
 export const TransactionHistory = ({ items }) => {
   return (
-    <Wrapper className="transaction-history">
+    <WrapperTabl>
       <thead>
-        <Topic>
+        <TopicTabl>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
-        </Topic>
+        </TopicTabl>
       </thead>
 
       <tbody>
@@ -24,6 +24,6 @@ export const TransactionHistory = ({ items }) => {
           </Text>
         ))}
       </tbody>
-    </Wrapper>
+    </WrapperTabl>
   );
 };
